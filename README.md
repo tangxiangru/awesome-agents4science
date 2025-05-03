@@ -5,11 +5,11 @@ This repository contains a curated list of papers on LLMs and agents for scienti
 ## Table of Contents
 - [Benchmarks and Evaluation](#benchmarks-and-evaluation)
 - [Agents for Science](#agents-for-science)
-    - [Machine Learning and Data Science](#machine-learning-and-data-science)
-    - [Biology and Medicine](#biology-and-medicine)
-    - [Chemistry and Material Science](#chemistry-and-material-science)
-    - [Other Disciplines](#other-disciplines)
-    - [Task-Specific Agents](#task-specific-agents)
+   - [Machine Learning and Data Science](#machine-learning-and-data-science)
+   - [Biology and Medicine](#biology-and-medicine)
+   - [Chemistry and Material Science](#chemistry-and-material-science)
+   - [Other Disciplines](#other-disciplines)
+   - [Task-Specific Agents](#task-specific-agents)
 - [Opinions and Prospectives](#opinions-and-prospectives)
 - [Full Bibliography](#full-bibliography)
 
@@ -23,6 +23,7 @@ This repository contains a curated list of papers on LLMs and agents for scienti
 | [ScienceAgent Bench](https://arxiv.org/abs/2410.05080) | Code Generation       | Bioinformatics, Computational Chemistry, Geographical Information Science, Psychology and Cognitive NeuroScience | 102                            | Publications                  | Expert Validated        | Low                    | N/A                   | 2.5-3h           |
 | [MLAgentBench](https://arxiv.org/abs/2310.03302)   | Code Generation       | Machine Learning                                                                                                 | 13                             | Kaggle, Recent Research       | N/A                     | Medium                 | N/A                   | -                |
 | [MLE-Bench](https://arxiv.org/abs/2410.07095)      | Code Generation       | Machine Learning                                                                                                 | 75                             | Kaggle                        | N/A                     | Medium                 | N/A                   | -                |
+| [ML-BENCH](https://arxiv.org/abs/2311.09835) | Code Generation       | Machine Learning                                                                                                 | 9,641                           | GitHub                        | Expert Validated        | Medium                 | Yes (86.76%)          | -                |
 | [RE-Bench](https://arxiv.org/abs/2411.15114)       | Code Generation       | Machine Learning                                                                                                 | 7                              | Created From Scratch          | Expert Curation         | Low                    | Yes                   | 8h               |
 | [DSBench](https://arxiv.org/abs/2409.07703)        | Code Generation       | Data Science                                                                                                     | 540                            | Eloquence, Kaggle             | N/A                     | High                   | N/A                   | -                |
 | [DA-Code](https://arxiv.org/abs/2410.07331)        | Code Generation       | Data Science                                                                                                     | 500                            | Kaggle, Github, Web           | N/A                     | Medium                 | N/A                   | -                |
@@ -48,6 +49,8 @@ $^*$ Ecological validity refers to how well the results of a study can be applie
 
 - **MLE-Bench (Chan et al., 2024)**: Train machine learning models to maximize their performance on adapted Kaggle challenges.
 
+- **ML-BENCH (Tang et al., 2024)**: Evaluates language models and agents on repository-level code understanding and machine learning tasks, testing their ability to generate executable code that correctly uses existing repositories with appropriate arguments.
+
 - **RE-Bench (Wijk et al., 2024)**: Compare LLM-based agents' performance against human experts on machine learning R&D tasks in the same programming environment.
 
 - **DSBench (Jing et al., 2024)**: Answer data analysis or modeling questions by writing programs to derive the solutions.
@@ -61,7 +64,6 @@ $^*$ Ecological validity refers to how well the results of a study can be applie
 - **OpenD5 (Zhong et al., 2023)**: Propose a natural language hypothesis based on a given corpus pair to address the given discovery goal.
 
 - **ReviewCritique (Du et al., 2024)**: Examine LLMs ability to assist in paper (meta-)reviewing and its recognizability.  
-
 
 - **AAAR-1.0 (Lou at al., 2024)**: Evaluate large language models on four tasks in R&D workflow: assess correctness of equations based on context, design experiments to validate research ideas and solutions, identify weaknesses in paper submissions, and identify whether each segment in human reviews is deficient or not.
 
@@ -192,8 +194,6 @@ $^*$ Ecological validity refers to how well the results of a study can be applie
 
 - Yusuf Roohani, Andrew Lee, Qian Huang, Jian Vora, Zachary Steinhart, Kexin Huang, Alexander Marson, Percy Liang, Jure Leskovec. 2024. **BioDiscoveryAgent: An AI Agent for Designing Genetic Perturbation Experiments**. In *arXiv*. https://arxiv.org/abs/2405.17631
 
-- Chenglei Si, Diyi Yang, Tatsunori Hashimoto. 2024. **Can LLMs Generate Novel Research Ideas? A Large-Scale Human Study with 100+ NLP Researchers**. In *arXiv*. https://arxiv.org/abs/2409.04109
-
 - Michael D. Skarlinski, Sam Cox, Jon M. Laurent, James D. Braza, Michaela Hinks, Michael J. Hammerling, Manvitha Ponnapati, Samuel G. Rodriques, Andrew D. White. 2024. **Language agents achieve superhuman synthesis of scientific knowledge**. In *arXiv*. https://arxiv.org/abs/2409.13740 
 
 - Haoyang Su, Renqi Chen, Shixiang Tang, Xinzhe Zheng, Jingzhe Li, Zhenfei Yin, Wanli Ouyang, Nanqing Dong. 2024. **Two Heads Are Better Than One: A Multi-Agent System Has the Potential to Improve Scientific Idea Generation**. In *arXiv*. https://arxiv.org/abs/2410.09403
@@ -203,6 +203,8 @@ $^*$ Ecological validity refers to how well the results of a study can be applie
 - Xiangru Tang, Anni Zou, Zhuosheng Zhang, Ziming Li, Yilun Zhao, Xingyao Zhang, Arman Cohan, and Mark Gerstein. 2024a. **MedAgents: Large Language Models as Collaborators for Zero-shot Medical Reasoning**. In *Findings of ACL 2024*. https://arxiv.org/abs/2311.10537 
 
 - Xiangru Tang, Qiao Jin, Kunlun Zhu, Tongxin Yuan, Yichi Zhang, Wangchunshu Zhou, Meng Qu, Yilun Zhao, Jian Tang, Zhuosheng Zhang, Arman Cohan, Zhiyong Lu, Mark Gerstein. 2024b. **Prioritizing Safeguarding Over Autonomy: Risks of LLM Agents for Science**. In *arXiv*. https://arxiv.org/abs/2402.04247
+
+- Xiangru Tang, Yuliang Liu, Zefan Cai, Yanjun Shao, Junjie Lu, Yichi Zhang, Zexuan Deng, Helan Hu, Kaikai An, Ruijun Huang, Shuzheng Si, Sheng Chen, Haozhe Zhao, Liang Chen, Yan Wang, Tianyu Liu, Zhiwei Jiang, Baobao Chang, Yin Fang, Yujia Qin, Wangchunshu Zhou, Yilun Zhao, Arman Cohan, Mark Gerstein. 2024. **ML-BENCH: Evaluating Large Language Models and Agents for Machine Learning Tasks on Repository-Level Code**. In *arXiv*. https://arxiv.org/abs/2311.09835
 
 - Minyang Tian, Luyu Gao, Shizhuo Dylan Zhang, Xinan Chen, Cunwei Fan, Xuefei Guo, Roland Haas, Pan Ji, Kittithat Krongchon, Yao Li, Shengyan Liu, Di Luo, Yutao Ma, Hao Tong, Kha Trinh, Chenyu Tian, Zihan Wang, Bohao Wu, Yanyu Xiong, Shengzhu Yin, Minhui Zhu, Kilian Lieret, Yanxin Lu, Genglin Liu, Yufeng Du, Tianhua Tao, Ofir Press, Jamie Callan, Eliu Huerta, Hao Peng. **SciCode: A Research Coding Benchmark Curated by Scientists**. In *arXiv*. https://arxiv.org/abs/2407.13168
 
